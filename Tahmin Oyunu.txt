@@ -1,0 +1,51 @@
+using System;
+using System.Text;
+
+namespace SayiTahmin
+{
+    class Program
+    {
+        static Random rastgele = new Random();
+
+        static void Main(string[] args)
+        {
+            int tahmin, sayi = rastgele.Next(100);
+            
+            while (true)
+           {
+
+		Console.Write("SAYI GİRİNİZ: ");
+                tahmin = Convert.ToInt32(Console.ReadLine());
+
+                if (tahmin == sayi-5)
+		{
+			Console.WriteLine("ÇOOKK SICAK");
+		}
+		else if (tahmin == sayi-10)
+		{
+			Console.WriteLine("SICAK");
+		}
+		else if (tahmin == sayi-15)
+		{
+			Console.WriteLine("Eh İşte");
+		}
+                else if (tahmin == sayi-20)
+		{
+			Console.WriteLine("SOĞUK");
+		}
+                else if (tahmin > sayi+20)	)
+		{
+			Console.WriteLine("ÇOK SOĞUK");
+		}
+                else if (tahmin > sayi+50)
+		{
+			Console.WriteLine("ÇOOOOKK SOĞUK");
+		}
+		else if 
+		{ 
+			Console.WriteLine("Başarısız oldunuz. Çıkmaz için enter'a basınız.");
+		}
+	  }
+      }
+    }
+}

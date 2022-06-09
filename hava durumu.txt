@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HavaDurumu
+{
+class Program
+{
+static void Main(string[] args)
+{
+ // nem artarsa hava sıcaklığı artar 
+
+            Console.WriteLine(" Nem yüzde kaçtır?");
+            int nem = Convert.ToInt32(Console.ReadLine());
+            if (nem >= 80)
+            {
+                Console.WriteLine(" hava sıcaklığı 40  derecedir");
+            }
+            else if (nem >= 70)
+            {
+                Console.WriteLine("hava sıcaklığı 35 derecedir");
+            }
+            else if (nem >= 60)
+            {
+                Console.WriteLine(" hava sıcaklığı 30 derecedir");
+            }
+            else if (nem >= 50)
+            {
+                Console.WriteLine(" hava sıcaklığı 25 derecedir");
+            }
+            else if (nem >= 40)
+            {
+                Console.WriteLine(" hava sıcaklığı 20 derecedir");
+            }
+            else if (nem >= 30)
+            {
+                Console.WriteLine(" hava sıcaklığı 15 derecedir");
+            }
+            else
+                Console.WriteLine("hava sıcaklığı 15 in altındadır.");
+        }
+
+}
+}
+}
